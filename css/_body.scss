@@ -11,26 +11,32 @@ body * {
 }
 
 html {
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   scroll-behavior: smooth;
   scrollbar-gutter: stable;
+  background-color: $black;
   @media (max-width: 1440px) {
-    font-size: 16px;
+    font-size: 18px;
   }
   @media (max-width: 1200px) {
-    font-size: 14px;
-  }
-  @media (max-width: 1024px) {
-    font-size: 13px;
-  }
-  @media (max-width: 768px) {
     font-size: 16px;
   }
+  @media (max-width: 1024px) {
+    font-size: 15px;
+  }
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+
   &.modal-is-open {
     overflow: hidden;
   }
+}
+
+p, h1, h2, h3, h4, h5, h6, a {
+  color:$text;
 }
 
 input,
@@ -53,42 +59,28 @@ ul {
 
 a{
   text-decoration: none;
-
-}
-
-h1, h2, h3, h4, h5, h6{
-  font-family: 'Nohemi', 'Helvetica', 'sans-serif';
 }
 
 p{
-  font-size: 0.9rem;
-  line-height: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
   font-weight: 400;
-  color:#777777;
 }
-
-.button-primary{
-  background-color: $blue;
-  color:#FFF;
-  font-weight: 400;
-  line-height: 1.1rem;
-  font-size: .9rem;
-  padding:1rem 2.5rem;
-  border-radius: 1.5rem;
-  text-transform: uppercase;
-  transition: .2s all ease;
-  cursor: pointer;
-  &:hover{
-    color:$lblue;
-    background-color: $bluehover;
-  }
-}
-
-
-
 
 input{
   &.error{
     box-shadow:0px 0px 2px 2px rgba(171, 14, 14, 0.68);
   }
+}
+
+.white-btn{
+  color:$black;
+  background-color: #FFf;
+  border-radius:5px;
+  padding: 0.8rem 2rem;
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
 }

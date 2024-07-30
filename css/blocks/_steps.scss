@@ -1,0 +1,75 @@
+.steps-block{
+  padding:5rem;
+  .container{
+    max-width: 1800px;
+    margin:0 auto;
+    .step{
+      &.first{
+        display: flex;
+        flex-direction: row;
+        gap: 3.5rem;
+        .media-area{
+          overflow: hidden;
+          width: 19rem;
+          height: 24rem;
+          img, video {
+            @include imageCover(50%, 50%);
+          }
+        }
+        .content-area{
+          width: 40rem;
+          position: relative;
+          transform: translateY(-7rem);
+          .title{
+          text-align: center;
+            margin-right: 0;
+            margin-left: auto;
+          }
+          .subtitle{
+            text-align: center;
+            margin-right: 0;
+            margin-left: auto;
+            position: relative;
+            color:$textgray;
+            font-weight: 400;
+            b, strong{
+              font-weight: 700;
+              color:#FFF;
+            }
+          }
+          .line{
+            background-color: $primary;
+            &.vertical{
+              width: 1px;
+              height: 12rem;
+              margin: 2.5rem auto 0;
+            }
+            &.horizontal{
+              width: 50%;
+              height: 1px;
+            }
+          }
+          .dot{
+            width: .5rem;
+            height: 0.5rem;
+            border-radius: 100%;
+            transform: translate(0, -50%);
+            background-color: $primary;
+          }
+        }
+      }
+
+
+      //COMMON
+      .content-area{
+        .title{
+          color:$text;
+          font-size: 3.5rem;
+          font-weight: 400;
+          line-height: 4rem;
+          margin-bottom: 1.75rem;
+        }
+      }
+    }
+  }
+}
