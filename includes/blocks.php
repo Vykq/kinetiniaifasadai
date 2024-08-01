@@ -4,7 +4,11 @@ global $blocks;
 
 $blocks = array(
     'main-hero' => 'Main Hero',
-    'steps' => 'Steps'
+    'steps' => 'Steps',
+    'text-video-block' => 'Text video block',
+    'two-images-grid' => 'Two images grid',
+    'gallery' => 'Galerija',
+    'newsletter-block' => 'Newsletter',
 );
 
 add_action('acf/init', 'my_acf_init');

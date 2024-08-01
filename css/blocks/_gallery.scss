@@ -1,0 +1,119 @@
+.gallery-block{
+  margin: 5rem 0;
+  padding: 0 5rem;
+
+  .container {
+    max-width: 1800px;
+    margin: 0 auto;
+    position: relative;
+    .content{
+      .title{
+        color:$text;
+        font-size: 3.5rem;
+        font-weight: 400;
+        line-height: 4rem;
+        margin-bottom: 1.75rem;
+        text-align: center;
+      }
+      .subtitle{
+        text-align: center;
+        margin: 0 auto;
+        width: 40%;
+        position: relative;
+        color:$textgray;
+        font-weight: 400;
+        b, strong{
+          font-weight: 700;
+          color:#FFF;
+        }
+      }
+    }
+    .gallery-slider-wrapper{
+      display: grid;
+      grid-template-columns: 6fr 1fr;
+      gap: 2.5rem;
+      margin-top: 2.5rem;
+      .left{
+        .splide{
+          .splide__pagination {
+            position: absolute;
+            bottom: -1.75rem;
+            left: 0;
+            display: flex;
+            gap: 1rem;
+
+            li {
+              button {
+                cursor: pointer;
+                width: 1.5rem;
+                height: 2px;
+                background-color: #FFF;
+                &.is-active {
+                  background-color: $primary;
+                }
+              }
+            }
+          }
+
+            .image-area{
+            width: 100%;
+            aspect-ratio: 1099/601;
+            overflow: hidden;
+            img{
+              @include imageCover(50%, 50%);
+            }
+          }
+        }
+      }
+      .right{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+      }
+    }
+    .line{
+      background-color: $primary;
+      &.vertical {
+        top: 50%;
+        right: 0rem;
+        width: 12rem;
+        height: 1px;
+        position: absolute;
+      }
+      &.horizontal{
+        width: 1px;
+        height:26rem;
+        position: absolute;
+        right: 0;
+        top: 50%;
+      }
+      &.vertical-2 {
+        width: 50%;
+        height: 1px;
+        position: absolute;
+        right: 0;
+        transform: translate(0, -100%);
+        top: calc(50% + 26rem);
+      }
+      &.horizontal-2{
+        width: 1px;
+        height: 5.75rem;
+        position: absolute;
+        right: 50%;
+        transform: translate(0, 0%);
+        top: calc(50% + 26rem);
+      }
+    }
+    .dot{
+      width: .5rem;
+      height: 0.5rem;
+      border-radius: 100%;
+      transform: translate(0%, 100%);
+      background-color: $primary;
+      margin: 12.75rem auto 0;
+
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.newsletter-form{
+  margin: 7.5rem 0;
+  padding: 0 5rem;
+  overflow: hidden;
+  .container {
+    max-width: 1800px;
+    margin: 0 auto;
+    .content{
+      .title{
+        color:$text;
+        font-size: 3.5rem;
+        font-weight: 400;
+        line-height: 4rem;
+        margin-bottom: 1.75rem;
+        text-align: center;
+        b, strong{
+          color:$primary;
+          font-weight: 400;
+        }
+      }
+      .subtitle{
+        text-align: center;
+        margin: 0 auto;
+        width: 60%;
+        position: relative;
+        color:$textgray;
+        font-weight: 400;
+        b, strong{
+          font-weight: 700;
+          color:#FFF;
+        }
+      }
+    }
+    form.newsletter{
+      width: 50%;
+      margin:2.5rem auto 0;
+      .input{
+        display: grid;
+        grid-template-columns: 1fr max-content;
+        gap: .75rem;
+        input{
+          width: 100%;
+          background-color: #D9D9D9;
+          border-radius: .5rem;
+          padding: 1rem 1.1rem;
+          font-weight: 700;
+          color: #000;
+          &::placeholder{
+            font-weight: 700;
+            color: #000;
+          }
+        }
+        button{
+          height: 100%;
+          border-radius: .5rem;
+        }
+      }
+    }
+  }
+}

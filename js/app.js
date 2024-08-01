@@ -1,23 +1,146 @@
 import showTooltip from "./modules/show-tooltip";
 import tippy from 'tippy.js';
+import 'tippy.js/dist/svg-arrow.css';
+import setInlineVideo from "./modules/set-inline-video";
 window.addEventListener('DOMContentLoaded', () => {
 
     if(document.querySelector('.tooltip')){
         // showTooltip();
     }
 
-    tippy('#tippy-1', {
-        content: tip1,
-        theme: 'tomato',
-        arrow: '<svg width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M-6.77527e-07 13.5L23.25 0.0766057L23.25 26.9234L-6.77527e-07 13.5Z" fill="#3D7FFF"/></svg>',
-        maxWidth: 500,
-    });
+    // if (document.querySelector('.swiper')) {
+    //     const swiper = new Swiper(".swiper", {
+    //         loop: true,
+    //         speed: 500,
+    //         slidesPerView: 1,
+    //         spaceBetween: 0,
+    //         // autoplay: {
+    //         //     delay: 0,
+    //         //     disableOnInteraction: false,
+    //         //     reverseDirection: true,
+    //         // },
+    //         on: {
+    //             slideChangeTransitionStart: function() {
+    //                 setBeforePrevAfterNext(this)
+    //             }
+    //         }
+    //     });
+    //
+    //     function setBeforePrevAfterNext($swiper){
+    //         let prev = $swiper.el.querySelector('.swiper-slide-prev')
+    //         let next = $swiper.el.querySelector('.swiper-slide-next')
+    //         let duplicate_prev = $swiper.el.querySelector('.swiper-slide-duplicate-prev');
+    //         let duplicate_next = $swiper.el.querySelector('.swiper-slide-duplicate-next');
+    //         let before_prev = prev.previousElementSibling
+    //         let after_next = next.nextElementSibling
+    //
+    //         $swiper.el.querySelectorAll('.swiper-slide-before-prev').forEach(element => {
+    //             element.classList.remove('swiper-slide-before-prev')
+    //         })
+    //         $swiper.el.querySelectorAll('.swiper-slide-after-next').forEach(element => {
+    //             element.classList.remove('swiper-slide-after-next')
+    //         })
+    //
+    //         before_prev.classList.add('swiper-slide-before-prev')
+    //         after_next.classList.add('swiper-slide-after-next')
+    //
+    //         if (duplicate_prev
+    //             && duplicate_prev.previousElementSibling
+    //         ) {
+    //             duplicate_prev.previousElementSibling.classList.add('swiper-slide-before-prev')
+    //         }
+    //
+    //         if (duplicate_next
+    //             && duplicate_next.nextElementSibling
+    //         ) {
+    //             duplicate_next.nextElementSibling.classList.add('swiper-slide-after-next')
+    //         }
+    //     }
+    // }
 
-    tippy('#tippy-2', {
-        content: tip2,
-        theme: 'tomato',
-        arrow: '<svg width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M-6.77527e-07 13.5L23.25 0.0766057L23.25 26.9234L-6.77527e-07 13.5Z" fill="#3D7FFF"/></svg>',
-        maxWidth: 500,
-    });
+
+    if (document.querySelector('video.video-inline')) {
+        setInlineVideo('.video-inline', '.play-video-inline');
+    }
+
+    if (document.querySelector('.gallery-slider')) {
+
+        new Splide('.gallery-slider', {
+            type: 'loop',
+            perPage: 1,
+            pagination: true,
+            gap: '1rem',
+            arrows: false,
+            autoplay: true,
+            interval: 2500
+        }).mount();
+    }
+
+
+    if(tip1) {
+        tippy('#tippy-1-left', {
+            content: tip1,
+            theme: 'tomato',
+            maxWidth: 500,
+            placement: 'right',
+            arrow: true,
+        });
+    }
+    if(tip2) {
+        tippy('#tippy-2-right', {
+            content: tip2,
+            theme: 'tomato',
+            maxWidth: 500,
+            placement: 'left',
+            arrow: true,
+        });
+    }
+    if(tip3) {
+        tippy('#tippy-3-bottom', {
+            content: tip3,
+            theme: 'tomato',
+            maxWidth: 500,
+            placement: 'top',
+            arrow: true,
+        });
+    }
+    if(tip4) {
+        tippy('#tippy-4-bottom', {
+            content: tip4,
+            theme: 'tomato',
+            maxWidth: 500,
+            placement: 'top',
+            arrow: true,
+        });
+    }
+
+    if(tip5) {
+        tippy('#tippy-5-right', {
+            content: tip5,
+            theme: 'tomato',
+            maxWidth: 500,
+            placement: 'top',
+            arrow: true,
+        });
+    }
+
+    if(tip6) {
+        tippy('#tippy-6-right', {
+            content: tip6,
+            theme: 'tomato',
+            maxWidth: 500,
+            placement: 'top',
+            arrow: true,
+        });
+    }
+
+    if(tip7) {
+        tippy('#tippy-6-right', {
+            content: tip7,
+            theme: 'tomato',
+            maxWidth: 500,
+            arrow: true,
+        });
+    }
 
 });

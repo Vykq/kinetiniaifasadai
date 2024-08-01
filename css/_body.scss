@@ -84,3 +84,15 @@ input{
   cursor: pointer;
   text-transform: uppercase;
 }
+
+.primary-btn{
+  color:$black;
+  background-color: $primary;
+  border-radius:5px;
+  padding: 0.8rem 2rem;
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+}
