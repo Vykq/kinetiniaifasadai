@@ -45,6 +45,10 @@
         </div>
     </div>
 </footer>
+
+<?php
+echo get_template_part('register-modal');
+?>
 <?php  wp_footer(); ?>
 </body>
 </html>

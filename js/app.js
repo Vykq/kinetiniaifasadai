@@ -2,10 +2,17 @@ import showTooltip from "./modules/show-tooltip";
 import tippy from 'tippy.js';
 import 'tippy.js/dist/svg-arrow.css';
 import setInlineVideo from "./modules/set-inline-video";
+import openConsultModal from "./modules/open-consult-modal";
+import sendConsultForm from "./modules/send-consult-form";
 window.addEventListener('DOMContentLoaded', () => {
 
     if(document.querySelector('.tooltip')){
         // showTooltip();
+    }
+
+    if(document.querySelector('.modal')){
+        openConsultModal();
+        sendConsultForm();
     }
 
     // if (document.querySelector('.swiper')) {
