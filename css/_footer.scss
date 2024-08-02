@@ -2,6 +2,10 @@
 footer{
   min-height: 34.5rem;
   position: relative;
+  padding: 0 5rem;
+  @media (max-width: 768px){
+    padding: 0 2.5rem;
+  }
   .main-footer{
     .container{
       max-width: 1800px;
@@ -9,32 +13,73 @@ footer{
       .wrapper{
         background-color: #181818;
         padding: 5rem;
+        @media (max-width: 960px){
+          padding: 3rem 2.5rem;
+        }
         .content{
           width: fit-content;
+          @media (max-width: 960px){
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+          }
           .footer-title{
             color: #9B9B9B;
             font-size: 1.1rem;
             font-weight: 400;
             margin-bottom: 2.5rem;
+            @media (max-width: 960px){
+              font-size: 1.5rem;
+              order:1;
+            }
+            @media (max-width: 420px){
+              font-size: 1.2rem;
+            }
+          }
+          .single-col{
+            @media (max-width: 960px){
+              order:2;
+            }
           }
           .two-col{
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 5rem;
+            @media (max-width: 960px){
+              grid-template-columns: 1fr;
+              gap: 2rem;
+              order:3
+            }
           }
           .green-title{
             color:$primary;
             font-size: .9rem;
             font-weight: 400;
+            @media (max-width: 960px){
+              font-size: 1.5rem;
+              margin-bottom: .75rem;
+            }
+            @media (max-width: 420px){
+              font-size: 1rem;
+            }
           }
           a{
             color:#FFF;
             margin-top: .75rem;
             position: relative;
             z-index: 1;
+            @media (max-width: 960px){
+              font-size: 1.5rem;
+            }
+            @media (max-width: 420px){
+              font-size: 1rem;
+            }
           }
           .info-block{
             margin-bottom: 2.5rem;
+            @media (max-width: 960px){
+              margin-bottom: 0;
+            }
           }
 
         }
@@ -44,6 +89,12 @@ footer{
       margin-top: 3rem;
       color: #636363;
       font-size: .75rem;
+      @media (max-width: 960px){
+        font-size: 1.2rem;
+      }
+      @media (max-width: 420px){
+        font-size: 1rem;
+      }
     }
   }
 
@@ -52,8 +103,15 @@ footer{
     position: absolute;
     bottom: 0;
     right: 0;
+    @media (max-width: 960px){
+      aspect-ratio: 1 / 1;
+    }
     img{
-      @include imageCover(50%, 50%)
+      @include imageCover(50%, 50%);
+      @media (max-width: 960px){
+        object-fit: contain;
+        object-position: 50% 100%;
+      }
     }
   }
 }

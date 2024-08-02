@@ -17,7 +17,14 @@
                         <input type="text" name="email" placeholder="El. Paštas" />
                     </div>
                     <div class="button-area">
-                        <button type="submit" class="primary-btn">Susisiekti</button>
+                        <button type="submit" class="primary-btn">
+                            <span class="desktop">Susisiekti</span>
+                        <span class="mobile">
+                            <svg width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 2L10.5 10.5L2 19" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        </button>
                     </div>
                 </div>
                 <p class="error-msg"></p>

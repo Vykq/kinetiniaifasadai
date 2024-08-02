@@ -1,5 +1,8 @@
 .steps-block{
   padding:5rem;
+  @media (max-width: 768px){
+    padding: 0 2.5rem;
+  }
   &.no-margin{
     margin-top: -25rem;
     padding: 0;
@@ -49,10 +52,19 @@
       }
 
       &.first{
+        @media (max-width: 960px){
+          flex-direction: column-reverse;
+        }
         .content-area{
           width: 40rem;
           position: relative;
           transform: translateY(-7rem);
+
+          @media (max-width: 960px){
+            width: 100%;
+            margin: 0 auto;
+            transform: translateY(0);
+          }
           .title{
           text-align: center;
             margin-right: 0;
@@ -65,6 +77,9 @@
             position: relative;
             color:$textgray;
             font-weight: 400;
+            @media (max-width: 960px){
+              width: 100%;
+            }
             b, strong{
               font-weight: 700;
               color:#FFF;
@@ -80,33 +95,67 @@
             &.horizontal{
               width: 50%;
               height: 1px;
+              @media (max-width: 960px){
+                display: none;
+              }
             }
+          }
+          .dot{
+            @media (max-width: 960px){
+              margin: 0 auto;
+            }
+          }
+        }
+        .media-area{
+          @media (max-width: 960px){
+            width: 100%;
+            height: unset;
           }
         }
       }
       &.second{
         position: relative;
+        @media (max-width: 960px){
+          display: grid;
+          grid-template-columns: 2rem 1fr;
+        }
+        @media (max-width: 960px){
+          margin-top: 2.5rem;
+        }
         .line{
           background-color: $primary;
           &.vertical{
             width: 1px;
             height: 12rem;
-            margin: 2.5rem 0 0 8.5rem
+            margin: 2.5rem 0 0 8.5rem;
+            @media (max-width: 960px){
+              margin: 2.5rem 0 0 0rem;
+            }
           }
           &.horizontal{
             width: 13rem;
             height: 1px;
             margin-left: 8.5rem;
+            @media (max-width: 960px){
+              margin-left: 0;
+              width: 2rem;
+            }
           }
           &.vertical-2{
             width: 1px;
             height: 13rem;
             margin-right: 0;
             margin-left: auto;
+            @media (max-width: 960px){
+              margin: 0 auto;
+            }
           }
           &.horizontal-2{
             width: 8.5rem;
             height: 1px;
+            @media (max-width: 960px){
+              display: none;
+            }
           }
         }
         .elements-2{
@@ -114,6 +163,9 @@
           bottom: -3rem;
           right: 25%;
           transform: translate(0, 100%);
+          @media (max-width: 960px){
+            right: 50%;
+          }
         }
         .dot{
           width: .5rem;
@@ -126,6 +178,10 @@
         }
         .content-area {
           width: 22rem;
+          @media (max-width: 960px){
+            width: 100%;
+            margin-top: 12rem;
+          }
           .title {
             text-align: left;
           }
@@ -143,6 +199,12 @@
           width: 100%;
           max-width: 28rem;
           height: 30rem;
+          @media (max-width: 960px){
+            grid-column-start: 1;
+            grid-column-end: 3;
+            max-width: unset;
+            height: unset;
+          }
         }
       }
       &.third{
@@ -212,22 +274,35 @@
           top: -4rem;
           left: 12rem;
           transform: translate(0, -100%);
+          @media (max-width: 960px){
+            left: 50%;
+          }
         }
         .line{
           background-color: $primary;
           &.vertical{
             width: 1px;
             height: 25rem;
+            @media (max-width: 960px){
+              display: none;
+            }
           }
           &.vertical-2{
             width: 1px;
             height: 4.5rem;
             margin-right: 0;
             margin-left: auto;
+            @media (max-width: 960px){
+              height: 8rem;
+            }
+
           }
           &.horizontal{
             width: 30rem;
             height: 1px;
+            @media (max-width: 960px){
+              display: none;
+            }
           }
 
 
@@ -246,6 +321,9 @@
             position: relative;
             color:$textgray;
             font-weight: 400;
+            @media (max-width: 960px){
+              width: 100%;
+            }
             b, strong{
               font-weight: 700;
               color:#FFF;
@@ -257,6 +335,9 @@
           display: grid;
           grid-template-columns: 1fr 1fr;
           gap: 2rem;
+          @media (max-width: 700px){
+            grid-template-columns: 1fr;
+          }
           .single-example{
             display: flex;
             flex-direction: column;
@@ -265,6 +346,11 @@
               max-width: 14rem;
               aspect-ratio: 1/1;
               margin: 0 auto 1.5rem;
+              @media (max-width: 600px){
+                max-height: unset;
+                max-width: unset;
+                width: 100%;
+              }
               img{
                 @include imageCover(50%, 50%);
                 object-fit: contain;

@@ -36,9 +36,7 @@
                 </div>
             </div>
             </div>
-            <div class="right">
 
-            </div>
         </div>
         <div class="ornaments">
             <div class="line vertical"></div>

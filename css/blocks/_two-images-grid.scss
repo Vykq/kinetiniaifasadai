@@ -3,6 +3,10 @@
   margin: 3.5rem 0;
   padding: 0 5rem;
   overflow: hidden;
+  @media (max-width: 768px){
+    padding: 0 2.5rem;
+    margin:2rem 0;
+  }
   .container {
     max-width: 1800px;
     margin: 0 auto;
@@ -22,6 +26,9 @@
         position: relative;
         color:$textgray;
         font-weight: 400;
+        @media (max-width: 960px){
+          width: 100%;
+        }
         b, strong{
           font-weight: 700;
           color:#FFF;
@@ -34,6 +41,11 @@
       gap: .5rem;
       width: 90%;
       margin: 3rem auto 0;
+      @media (max-width: 960px){
+        width:100%;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
       .media-area{
         overflow: hidden;
         height: 100%;

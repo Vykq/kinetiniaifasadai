@@ -110,46 +110,46 @@
                                 <img src="<?php echo get_theme_file_uri() . '/assets/svg/pile.svg'; ?>" alt="row1">
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="image-area">
-                                <img src="<?php echo get_theme_file_uri() . '/assets/svg/pile.svg'; ?>" alt="row1">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="image-area">
-                                <img src="<?php echo get_theme_file_uri() . '/assets/svg/pile.svg'; ?>" alt="row1">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="image-area">
-                                <img src="<?php echo get_theme_file_uri() . '/assets/svg/pile.svg'; ?>" alt="row1">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="image-area">
-                                <img src="<?php echo get_theme_file_uri() . '/assets/svg/pile.svg'; ?>" alt="row1">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="image-area">
-                                <img src="<?php echo get_theme_file_uri() . '/assets/svg/pile.svg'; ?>" alt="row1">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="image-area">
-                                <img src="<?php echo get_theme_file_uri() . '/assets/svg/pile.svg'; ?>" alt="row1">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="image-area">
-                                <img src="<?php echo get_theme_file_uri() . '/assets/svg/pile.svg'; ?>" alt="row1">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="image-area">
-                                <img src="<?php echo get_theme_file_uri() . '/assets/svg/pile.svg'; ?>" alt="row1">
-                            </div>
-                        </div>
+<!--                        <div class="swiper-slide">-->
+<!--                            <div class="image-area">-->
+<!--                                <img src="--><?php //echo get_theme_file_uri() . '/assets/svg/pile.svg'; ?><!--" alt="row1">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="swiper-slide">-->
+<!--                            <div class="image-area">-->
+<!--                                <img src="--><?php //echo get_theme_file_uri() . '/assets/svg/pile.svg'; ?><!--" alt="row1">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="swiper-slide">-->
+<!--                            <div class="image-area">-->
+<!--                                <img src="--><?php //echo get_theme_file_uri() . '/assets/svg/pile.svg'; ?><!--" alt="row1">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="swiper-slide">-->
+<!--                            <div class="image-area">-->
+<!--                                <img src="--><?php //echo get_theme_file_uri() . '/assets/svg/pile.svg'; ?><!--" alt="row1">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="swiper-slide">-->
+<!--                            <div class="image-area">-->
+<!--                                <img src="--><?php //echo get_theme_file_uri() . '/assets/svg/pile.svg'; ?><!--" alt="row1">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="swiper-slide">-->
+<!--                            <div class="image-area">-->
+<!--                                <img src="--><?php //echo get_theme_file_uri() . '/assets/svg/pile.svg'; ?><!--" alt="row1">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="swiper-slide">-->
+<!--                            <div class="image-area">-->
+<!--                                <img src="--><?php //echo get_theme_file_uri() . '/assets/svg/pile.svg'; ?><!--" alt="row1">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="swiper-slide">-->
+<!--                            <div class="image-area">-->
+<!--                                <img src="--><?php //echo get_theme_file_uri() . '/assets/svg/pile.svg'; ?><!--" alt="row1">-->
+<!--                            </div>-->
+<!--                        </div>-->
                     </div>
                 </div>
 

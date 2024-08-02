@@ -1,7 +1,10 @@
 .gallery-block{
-  margin: 5rem 0;
+  margin: 5rem 0 16.75rem;
   padding: 0 5rem;
-
+  @media (max-width: 768px){
+    padding: 0 2.5rem;
+    margin:2rem 0 16.75rem;
+  }
   .container {
     max-width: 1800px;
     margin: 0 auto;
@@ -22,6 +25,9 @@
         position: relative;
         color:$textgray;
         font-weight: 400;
+        @media (max-width: 960px){
+          width: 100%;
+        }
         b, strong{
           font-weight: 700;
           color:#FFF;
@@ -30,9 +36,12 @@
     }
     .gallery-slider-wrapper{
       display: grid;
-      grid-template-columns: 6fr 1fr;
-      gap: 2.5rem;
+      width: 85%;
       margin-top: 2.5rem;
+      @media (max-width: 960px){
+        width: 100%;
+        grid-template-columns: 1fr;
+      }
       .left{
         .splide{
           .splide__pagination {
@@ -41,7 +50,12 @@
             left: 0;
             display: flex;
             gap: 1rem;
-
+            @media (max-width: 960px){
+              align-items: center;
+              justify-content: center;
+              width: 100%;
+              bottom: -2.75rem;
+            }
             li {
               button {
                 cursor: pointer;
@@ -59,6 +73,9 @@
             width: 100%;
             aspect-ratio: 1099/601;
             overflow: hidden;
+              @media (max-width: 960px){
+                aspect-ratio: 329/500;
+              }
             img{
               @include imageCover(50%, 50%);
             }
@@ -73,21 +90,44 @@
 
       }
     }
+    .ornaments{
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      @media (max-width: 960px){
+        position: relative;
+        left: unset;
+        top: unset;
+      }
+    }
     .line{
       background-color: $primary;
       &.vertical {
         top: 50%;
         right: 0rem;
-        width: 12rem;
+        width: 10%;
         height: 1px;
         position: absolute;
+        @media (max-width: 960px){
+          display: none;
+        }
       }
       &.horizontal{
         width: 1px;
-        height:26rem;
+        height:33rem;
         position: absolute;
         right: 0;
         top: 50%;
+        @media (max-width: 1750px){
+          height: 30rem;
+        }
+        @media (max-width: 1750px){
+          height: 27rem;
+        }
+        @media (max-width: 960px){
+          display: none;
+        }
       }
       &.vertical-2 {
         width: 50%;
@@ -95,7 +135,16 @@
         position: absolute;
         right: 0;
         transform: translate(0, -100%);
-        top: calc(50% + 26rem);
+        top: calc(50% + 33rem);
+        @media (max-width: 1750px){
+          top: calc(50% + 30rem);
+        }
+        @media (max-width: 1500px){
+          top: calc(50% + 27rem);
+        }
+        @media (max-width: 960px){
+          display: none;
+        }
       }
       &.horizontal-2{
         width: 1px;
@@ -103,17 +152,38 @@
         position: absolute;
         right: 50%;
         transform: translate(0, 0%);
-        top: calc(50% + 26rem);
+        top: calc(50% + 33rem);
+        @media (max-width: 1750px){
+          top: calc(50% + 30rem);
+        }
+        @media (max-width: 1500px){
+          top: calc(50% + 27rem);
+        }
+        @media (max-width: 960px){
+          bottom: -10rem;
+          top: unset;
+        }
+
       }
     }
     .dot{
-      width: .5rem;
+      width: 0.5rem;
       height: 0.5rem;
       border-radius: 100%;
-      transform: translate(0%, 100%);
-      background-color: $primary;
-      margin: 12.75rem auto 0;
-
+      transform: translate(-50%, 100%);
+      position: absolute;
+      bottom: -38.75rem;
+      background-color: #DBFF00;
+      left: 50%;
+      @media (max-width: 1750px){
+        bottom: -35.75rem;
+      }
+      @media (max-width: 1500px){
+        bottom: -32.75rem;
+      }
+      @media (max-width: 960px){
+        bottom: -10rem;
+      }
     }
   }
 }

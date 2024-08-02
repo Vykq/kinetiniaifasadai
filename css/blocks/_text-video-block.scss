@@ -2,6 +2,9 @@
   padding: 0 5rem;
   margin:7.5rem 0 1.5rem;
   overflow: hidden;
+  @media (max-width: 768px){
+    padding: 0 2.5rem;
+  }
   .container{
     max-width: 1800px;
     margin:0 auto;
@@ -10,12 +13,28 @@
       grid-template-columns: 0.5fr 1fr;
       gap: 1.5rem;
       margin-bottom: 1.5rem;
+      @media (max-width: 960px){
+        grid-template-columns: 1fr;
+      }
       &.second{
         grid-template-columns: 1.7fr 1fr;
+        @media (max-width: 960px){
+          grid-template-columns: 1fr;
+          .left{
+            order:2;
+          }
+          .right{
+            order:1;
+          }
+        }
+
       }
       .left{
         background-color: #181818;
         padding: 3rem 3rem 1.7rem;
+        @media (max-width: 1350px){
+          padding:1.5rem 1.5rem 1rem;
+        }
         &.media {
           background-color: transparent;
           padding: 0;
@@ -93,6 +112,16 @@
           justify-content: center;
           flex-direction: column;
           padding: 2rem 2rem 3.5rem;
+          @media (max-width: 1600px){
+            padding: 1.5rem 1.5rem 2.5rem;
+          }
+          @media (max-width: 1280px){
+            padding: 1rem 1rem 2rem;
+          }
+          @media (max-width: 960px){
+            width: 100%;
+            aspect-ratio: 1/1;
+          }
           .content{
             width: 70%;
             margin: 0 auto;
@@ -101,10 +130,41 @@
               font-size: 6rem;
               line-height: 6rem;
               font-weight: 400;
+              @media (max-width: 1600px){
+                font-size: 4rem;
+                line-height: 4rem;
+              }
+              @media (max-width: 1280px){
+                font-size: 3rem;
+                line-height: 3rem;
+              }
+              @media (max-width: 960px){
+                font-size: 6rem;
+                line-height: 6rem;
+              }
+              @media (max-width: 500px){
+                font-size: 5rem;
+                line-height: 5rem;
+              }
             }
             .text{
               margin-top: .5rem;
+              line-height: 2rem;
               font-size: 1.75rem;
+              @media (max-width: 1760px){
+                font-size: 1.5rem;
+              }
+              @media (max-width: 1280px){
+                font-size: 1.2rem;
+                line-height: 1.4rem;
+              }
+              @media (max-width: 960px){
+                line-height: 2rem;
+                font-size: 1.75rem;
+              }
+              @media (max-width: 600px){
+                font-size: 1.5rem;
+              }
             }
           }
 
@@ -116,6 +176,10 @@
         overflow: hidden;
         position: relative;
         aspect-ratio: 1015 / 534;
+        @media (max-width: 960px){
+          aspect-ratio: 330/534;
+
+        }
         img, video{
           @include imageCover(50%, 50%);
         }

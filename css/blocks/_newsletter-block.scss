@@ -2,6 +2,10 @@
   margin: 7.5rem 0;
   padding: 0 5rem;
   overflow: hidden;
+  @media (max-width: 768px){
+    padding: 0 2.5rem;
+    margin:5rem 0;
+  }
   .container {
     max-width: 1800px;
     margin: 0 auto;
@@ -25,6 +29,9 @@
         position: relative;
         color:$textgray;
         font-weight: 400;
+        @media (max-width: 960px){
+          width: 100%;
+        }
         b, strong{
           font-weight: 700;
           color:#FFF;
@@ -34,6 +41,9 @@
     form.newsletter{
       width: 50%;
       margin:2.5rem auto 0;
+      @media (max-width: 960px){
+        width: 100%;
+      }
       .input{
         display: grid;
         grid-template-columns: 1fr max-content;
@@ -45,6 +55,9 @@
           padding: 1rem 1.1rem;
           font-weight: 700;
           color: #000;
+          @media (max-width: 960px){
+            height: 100%;
+          }
           &::placeholder{
             font-weight: 700;
             color: #000;
@@ -53,6 +66,21 @@
         button{
           height: 100%;
           border-radius: .5rem;
+          @media (max-width: 960px){
+            aspect-ratio: 1/1;
+          }
+          .desktop{
+            display: flex;
+            @media (max-width: 960px){
+              display: none;
+            }
+          }
+          .mobile{
+            display: none;
+            @media (max-width: 960px){
+              display: flex;
+            }
+          }
         }
       }
     }
