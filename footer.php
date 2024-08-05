@@ -10,6 +10,9 @@
                         <div class="info-block">
                             <p class="green-title">Dėl komercinių pasiūlymų</p>
                             <a href="mailto:<?php echo get_field('email','main-settings');?>"><?php echo get_field('email','main-settings');?></a>
+                            <?php if(get_field('phone','main-settings')): ?>
+                                <a href="tel:<?php echo get_field('phone','main-settings');?>"><?php echo get_field('phone','main-settings');?></a>
+                            <?php endif; ?>
                         </div>
                         <div class="info-block">
                             <p class="green-title">Sekite mus</p>
@@ -24,12 +27,14 @@
                             </a>
                         </div>
                     </div>
+                    <?php if(get_field('email_pardavimai','main-settings')): ?>
                     <div class="single-col">
                         <div class="info-block">
                             <p class="green-title">Pardavimai</p>
                             <a href="mailto:<?php echo get_field('email_pardavimai','main-settings');?>"><?php echo get_field('email_pardavimai','main-settings');?></a>
                         </div>
                     </div>
+                    <?php endif; ?>
 
                 </div>
 

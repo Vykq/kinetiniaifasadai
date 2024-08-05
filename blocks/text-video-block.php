@@ -69,10 +69,10 @@
         </div>
         <div class="wrapper second">
             <div class="left media">
-                <?php if(get_field('video_mp4')) : ?>
+                <?php if(get_field('video_mp4_2')) : ?>
                     <div class="media-area">
-                        <video class="video video-inline" playsinline muted loop poster="<?php echo get_field('image'); ?>">
-                            <source src="<?php echo get_field('video_mp4'); ?>" type="video/mp4">
+                        <video class="video video-inline" playsinline muted loop poster="<?php echo get_field('image_2'); ?>">
+                            <source src="<?php echo get_field('video_mp4_2'); ?>" type="video/mp4">
                         </video>
                         <button class="play-video-inline" name="Play video" aria-label="Play video">
                             <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -82,9 +82,9 @@
                         </button>
                     </div>
                 <?php else: ?>
-                    <?php if(get_field('image')): ?>
+                    <?php if(get_field('image_2')): ?>
                         <div class="media-area">
-                            <img src="<?php echo get_field('image'); ?>" alt="<?php echo strip_tags(get_field('title')['title_text']); ?>">
+                            <img src="<?php echo get_field('image_2'); ?>" alt="<?php echo strip_tags(get_field('title')['title_text']); ?>">
                         </div>
                     <?php endif; ?>
                 <?php endif; ?>

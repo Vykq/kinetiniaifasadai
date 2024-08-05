@@ -1,9 +1,10 @@
 import showTooltip from "./modules/show-tooltip";
-import tippy from 'tippy.js';
+import tippy, {inlinePositioning} from 'tippy.js';
 import 'tippy.js/dist/svg-arrow.css';
 import setInlineVideo from "./modules/set-inline-video";
 import openConsultModal from "./modules/open-consult-modal";
 import sendConsultForm from "./modules/send-consult-form";
+import sendNewsletterForm from "./modules/send-newsletter-form";
 window.addEventListener('DOMContentLoaded', () => {
 
     if(document.querySelector('.tooltip')){
@@ -13,6 +14,10 @@ window.addEventListener('DOMContentLoaded', () => {
     if(document.querySelector('.modal')){
         openConsultModal();
         sendConsultForm();
+    }
+
+    if(document.querySelector('form.newsletter')){
+        sendNewsletterForm();
     }
 
     // if (document.querySelector('.swiper')) {
@@ -89,8 +94,9 @@ window.addEventListener('DOMContentLoaded', () => {
             content: tip1,
             theme: 'tomato',
             maxWidth: 500,
-            placement: 'right',
-            arrow: true,
+            arrow: false,
+            inlinePositioning: true,
+            plugins: [inlinePositioning],
         });
     }
     if(tip2) {
@@ -98,8 +104,9 @@ window.addEventListener('DOMContentLoaded', () => {
             content: tip2,
             theme: 'tomato',
             maxWidth: 500,
-            placement: 'left',
-            arrow: true,
+            arrow: false,
+            inlinePositioning: true,
+            plugins: [inlinePositioning],
         });
     }
     if(tip3) {
@@ -107,8 +114,9 @@ window.addEventListener('DOMContentLoaded', () => {
             content: tip3,
             theme: 'tomato',
             maxWidth: 500,
-            placement: 'top',
-            arrow: true,
+            arrow: false,
+            inlinePositioning: true,
+            plugins: [inlinePositioning],
         });
     }
     if(tip4) {
@@ -116,8 +124,9 @@ window.addEventListener('DOMContentLoaded', () => {
             content: tip4,
             theme: 'tomato',
             maxWidth: 500,
-            placement: 'top',
-            arrow: true,
+            arrow: false,
+            inlinePositioning: true,
+            plugins: [inlinePositioning],
         });
     }
 
@@ -126,8 +135,9 @@ window.addEventListener('DOMContentLoaded', () => {
             content: tip5,
             theme: 'tomato',
             maxWidth: 500,
-            placement: 'top',
-            arrow: true,
+            arrow: false,
+            inlinePositioning: true,
+            plugins: [inlinePositioning],
         });
     }
 
@@ -136,8 +146,9 @@ window.addEventListener('DOMContentLoaded', () => {
             content: tip6,
             theme: 'tomato',
             maxWidth: 500,
-            placement: 'top',
-            arrow: true,
+            arrow: false,
+            inlinePositioning: true,
+            plugins: [inlinePositioning],
         });
     }
 
@@ -146,7 +157,9 @@ window.addEventListener('DOMContentLoaded', () => {
             content: tip7,
             theme: 'tomato',
             maxWidth: 500,
-            arrow: true,
+            arrow: false,
+            inlinePositioning: true,
+            plugins: [inlinePositioning],
         });
     }
 

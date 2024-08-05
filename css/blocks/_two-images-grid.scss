@@ -50,6 +50,7 @@
         overflow: hidden;
         height: 100%;
         max-height: 26.5rem;
+        position: relative;
         video, img{
           @include imageCover(50%, 50%)
         }

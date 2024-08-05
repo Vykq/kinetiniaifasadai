@@ -17,6 +17,7 @@ html {
   scroll-behavior: smooth;
   scrollbar-gutter: stable;
   background-color: $black;
+  overflow-x:hidden;
   @media (max-width: 1440px) {
     font-size: 18px;
   }

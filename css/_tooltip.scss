@@ -83,3 +83,7 @@
     bottom: .5rem;
   }
 }
+
+[data-tippy-root] {
+  max-width: calc(100vw - 2rem);
+}

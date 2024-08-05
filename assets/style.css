@@ -35,6 +35,7 @@ html {
   scroll-behavior: smooth;
   scrollbar-gutter: stable;
   background-color: #000;
+  overflow-x: hidden;
 }
 @media (max-width: 1440px) {
   html {
@@ -188,6 +189,10 @@ input.error {
   bottom: 0.5rem;
 }
 
+[data-tippy-root] {
+  max-width: calc(100vw - 2rem);
+}
+
 footer {
   position: relative;
   padding: 0 5rem 5rem;
@@ -275,6 +280,7 @@ footer .main-footer .container .wrapper .content a {
   margin-top: 0.75rem;
   position: relative;
   z-index: 1;
+  display: block;
 }
 @media (max-width: 960px) {
   footer .main-footer .container .wrapper .content a {
@@ -895,6 +901,9 @@ footer .footer-img img {
     margin: 0 auto;
   }
 }
+.steps-block .container .step.first .media-area {
+  min-width: 19rem;
+}
 @media (max-width: 960px) {
   .steps-block .container .step.first .media-area {
     width: 100%;
@@ -923,6 +932,16 @@ footer .footer-img img {
   height: 12rem;
   margin: 2.5rem 0 0 8.5rem;
 }
+@media (max-width: 1600px) {
+  .steps-block .container .step.second .line.vertical {
+    margin: 2.5rem 0 0 5rem;
+  }
+}
+@media (max-width: 1280px) {
+  .steps-block .container .step.second .line.vertical {
+    height: 8rem;
+  }
+}
 @media (max-width: 960px) {
   .steps-block .container .step.second .line.vertical {
     margin: 2.5rem 0 0 0rem;
@@ -932,6 +951,18 @@ footer .footer-img img {
   width: 13rem;
   height: 1px;
   margin-left: 8.5rem;
+}
+@media (max-width: 1600px) {
+  .steps-block .container .step.second .line.horizontal {
+    margin-left: 5rem;
+    width: 8rem;
+  }
+}
+@media (max-width: 1280px) {
+  .steps-block .container .step.second .line.horizontal {
+    margin-left: 5rem;
+    width: 3rem;
+  }
 }
 @media (max-width: 960px) {
   .steps-block .container .step.second .line.horizontal {
@@ -945,6 +976,21 @@ footer .footer-img img {
   margin-right: 0;
   margin-left: auto;
 }
+@media (max-width: 1850px) {
+  .steps-block .container .step.second .line.vertical-2 {
+    height: 10rem;
+  }
+}
+@media (max-width: 1650px) {
+  .steps-block .container .step.second .line.vertical-2 {
+    height: 8rem;
+  }
+}
+@media (max-width: 1500px) {
+  .steps-block .container .step.second .line.vertical-2 {
+    height: 6rem;
+  }
+}
 @media (max-width: 960px) {
   .steps-block .container .step.second .line.vertical-2 {
     margin: 0 auto;
@@ -953,6 +999,21 @@ footer .footer-img img {
 .steps-block .container .step.second .line.horizontal-2 {
   width: 8.5rem;
   height: 1px;
+}
+@media (max-width: 1650px) {
+  .steps-block .container .step.second .line.horizontal-2 {
+    width: 6rem;
+  }
+}
+@media (max-width: 1510px) {
+  .steps-block .container .step.second .line.horizontal-2 {
+    width: 5rem;
+  }
+}
+@media (max-width: 1500px) {
+  .steps-block .container .step.second .line.horizontal-2 {
+    width: 4rem;
+  }
 }
 @media (max-width: 960px) {
   .steps-block .container .step.second .line.horizontal-2 {
@@ -964,6 +1025,11 @@ footer .footer-img img {
   bottom: -3rem;
   right: 25%;
   transform: translate(0, 100%);
+}
+@media (max-width: 1900px) {
+  .steps-block .container .step.second .elements-2 {
+    right: 20%;
+  }
 }
 @media (max-width: 960px) {
   .steps-block .container .step.second .elements-2 {
@@ -1014,44 +1080,46 @@ footer .footer-img img {
   }
 }
 .steps-block .container .step.third {
+  margin: 5rem 0;
   display: block;
 }
-.steps-block .container .step.third .slider {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  margin-top: 40px;
+@media (max-width: 960px) {
+  .steps-block .container .step.third {
+    margin: 18rem 0 0;
+  }
 }
-.steps-block .container .step.third .slider .swiper-slide {
-  font-size: 0;
-  transition: opacity 0.5s ease, transform 0.5s ease;
+@media (max-width: 840px) {
+  .steps-block .container .step.third {
+    margin: 20rem 0 4rem;
+  }
 }
-.steps-block .container .step.third .slider .swiper-slide .image-area {
+@media (max-width: 768px) {
+  .steps-block .container .step.third {
+    margin: 25rem 0 10rem;
+  }
+}
+@media (max-width: 600px) {
+  .steps-block .container .step.third {
+    margin: 28rem 0 15rem;
+  }
+}
+@media (max-width: 370px) {
+  .steps-block .container .step.third {
+    margin: 30rem 0 20rem;
+  }
+}
+.steps-block .container .step.third .slider-pile {
+  overflow: hidden;
   width: 100%;
+  height: 100%;
 }
-.steps-block .container .step.third .slider .swiper-slide .image-area img {
+.steps-block .container .step.third .slider-pile video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: 50% 50%;
   transform: none;
   object-fit: contain;
-}
-.steps-block .container .step.third .slider .swiper-slide-active {
-  transform: translateY(0) scale(1.1);
-}
-.steps-block .container .step.third .slider .swiper-slide-prev,
-.steps-block .container .step.third .slider .swiper-slide-duplicate-prev {
-  transform: translateY(-92%) scale(1.1) translateX(7%);
-}
-.steps-block .container .step.third .slider .swiper-slide-next,
-.steps-block .container .step.third .slider .swiper-slide-duplicate-next {
-  transform: translateY(50%);
-}
-.steps-block .container .step.third .slider .swiper-slide-before-prev {
-  transform: translateY(-100%);
-}
-.steps-block .container .step.third .slider .swiper-slide-after-next {
-  transform: translateY(100%);
 }
 .steps-block .container .step.fourth {
   position: relative;
@@ -1060,8 +1128,8 @@ footer .footer-img img {
 .steps-block .container .step.fourth .ornament {
   position: absolute;
   top: -4rem;
-  left: 12rem;
-  transform: translate(0, -100%);
+  left: 50%;
+  transform: translate(-100%, -100%);
 }
 @media (max-width: 960px) {
   .steps-block .container .step.fourth .ornament {
@@ -1074,6 +1142,11 @@ footer .footer-img img {
 .steps-block .container .step.fourth .line.vertical {
   width: 1px;
   height: 25rem;
+}
+@media (max-width: 1450px) {
+  .steps-block .container .step.fourth .line.vertical {
+    height: 20rem;
+  }
 }
 @media (max-width: 960px) {
   .steps-block .container .step.fourth .line.vertical {
@@ -1496,6 +1569,7 @@ footer .footer-img img {
   overflow: hidden;
   height: 100%;
   max-height: 26.5rem;
+  position: relative;
 }
 .two-images-grid .container .wrapper .media-area video, .two-images-grid .container .wrapper .media-area img {
   width: 100%;
@@ -1763,6 +1837,8 @@ footer .footer-img img {
   margin: 7.5rem 0;
   padding: 0 5rem;
   overflow: hidden;
+  position: relative;
+  z-index: 2;
 }
 @media (max-width: 768px) {
   .newsletter-form {

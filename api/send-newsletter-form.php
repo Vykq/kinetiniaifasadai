@@ -1,17 +1,11 @@
 <?php
 
 require_once($_SERVER['DOCUMENT_ROOT'] . "/wp-load.php");
-
-$postData = [];
-$postData['toTop'] = true;
-
-$name = $_POST['name'];
-$phone = $_POST['phone'];
 $email = $_POST['email'];
 
 $to = get_field('email_to','main-settings');
 
-$subject = 'Kinetiniai fasadai: Nauja užklausa';
+$subject = 'Kinetiniai fasadai: Nauja el.pašto užklausa';
 
 $message = '
 <html>
@@ -19,9 +13,7 @@ $message = '
     <title>' . $subject . '</title>
 </head>
 <body>
-<p><b>Vardas Pavardė:</b> ' . $name . '</p>
-<p><b>Tel. nr:</b> ' . $phone . '</p>
-<p><b>El. paštas:</b> ' . $email . '</p>
+<p><b>Email:</b> ' . $email . '</p>
 </body>
 </html>
 ';

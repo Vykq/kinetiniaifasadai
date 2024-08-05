@@ -107,6 +107,7 @@
           }
         }
         .media-area{
+          min-width: 19rem;
           @media (max-width: 960px){
             width: 100%;
             height: unset;
@@ -128,6 +129,12 @@
             width: 1px;
             height: 12rem;
             margin: 2.5rem 0 0 8.5rem;
+            @media (max-width: 1600px){
+              margin: 2.5rem 0 0 5rem;
+            }
+            @media (max-width: 1280px){
+              height: 8rem;
+            }
             @media (max-width: 960px){
               margin: 2.5rem 0 0 0rem;
             }
@@ -136,6 +143,14 @@
             width: 13rem;
             height: 1px;
             margin-left: 8.5rem;
+            @media (max-width: 1600px){
+              margin-left: 5rem;
+              width: 8rem;
+            }
+            @media (max-width: 1280px){
+              margin-left: 5rem;
+              width: 3rem;
+            }
             @media (max-width: 960px){
               margin-left: 0;
               width: 2rem;
@@ -146,6 +161,15 @@
             height: 13rem;
             margin-right: 0;
             margin-left: auto;
+            @media (max-width: 1850px){
+              height: 10rem;
+            }
+            @media (max-width: 1650px){
+              height: 8rem;
+            }
+            @media (max-width: 1500px){
+              height: 6rem;
+            }
             @media (max-width: 960px){
               margin: 0 auto;
             }
@@ -153,6 +177,15 @@
           &.horizontal-2{
             width: 8.5rem;
             height: 1px;
+            @media (max-width: 1650px){
+              width: 6rem;
+            }
+            @media (max-width: 1510px){
+              width: 5rem;
+            }
+            @media (max-width: 1500px){
+              width: 4rem;
+            }
             @media (max-width: 960px){
               display: none;
             }
@@ -163,6 +196,10 @@
           bottom: -3rem;
           right: 25%;
           transform: translate(0, 100%);
+
+          @media (max-width: 1900px){
+            right: 20%;
+          }
           @media (max-width: 960px){
             right: 50%;
           }
@@ -208,62 +245,33 @@
         }
       }
       &.third{
+        margin:5rem 0;
         display: block;
-        .slider{
-          padding-top: 100px;
-          padding-bottom: 100px;
-          margin-top: 40px;
-
-          .swiper-slide{
-            font-size: 0;
-            transition: opacity 0.5s ease, transform 0.5s ease;
-            .image-area{
-              width: 100%;
-              img{
-                @include imageCover(50%, 50%);
-                object-fit: contain;
-              }
-            }
+        @media (max-width: 960px){
+          margin:18rem 0 0;
+        }
+        @media (max-width: 840px){
+          margin:20rem 0 4rem;
+        }
+        @media (max-width: 768px){
+          margin:25rem 0 10rem;
+        }
+        @media (max-width: 600px){
+          margin:28rem 0 15rem;
+        }
+        @media (max-width: 370px){
+          margin:30rem 0 20rem;
+        }
+        .slider-pile{
+          overflow: hidden;
+          width: 100%;
+          height: 100%;
+          video{
+            @include imageCover(50%, 50%);
+            object-fit: contain;
           }
-
-          .swiper-slide-active{
-            transform: translateY(0) scale(1.1);
-          }
-
-          .swiper-slide-prev,
-          .swiper-slide-duplicate-prev{
-            transform: translateY(-92%) scale(1.1) translateX(7%)
-          }
-          .swiper-slide-next,
-          .swiper-slide-duplicate-next{
-            transform: translateY(50%);
-          }
-
-          .swiper-slide-before-prev
-          {
-            transform: translateY(-100%);
-          }
-          .swiper-slide-after-next{
-            transform: translateY(100%);
-          }
-
-
         }
 
-
-        //.slider-area{
-        //  transform: rotate(45deg);
-        //}
-        //.image-area{
-        //  width: 100%;
-        //  height: 100%;
-        //  aspect-ratio: 1 / 1;
-        //  img{
-        //    @include imageCover(50%, 50%);
-        //    object-fit: contain;
-        //    transform: rotate(-45deg);
-        //  }
-        //}
       }
 
       &.fourth{
@@ -272,8 +280,8 @@
         .ornament{
           position: absolute;
           top: -4rem;
-          left: 12rem;
-          transform: translate(0, -100%);
+          left: 50%;
+          transform: translate(-100%, -100%);
           @media (max-width: 960px){
             left: 50%;
           }
@@ -283,6 +291,9 @@
           &.vertical{
             width: 1px;
             height: 25rem;
+            @media (max-width: 1450px){
+             height: 20rem;
+            }
             @media (max-width: 960px){
               display: none;
             }
