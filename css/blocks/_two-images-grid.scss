@@ -1,6 +1,6 @@
 
 .two-images-grid{
-  margin: 3.5rem 0;
+  margin: -2rem 0 3.5rem;
   padding: 0 5rem;
   overflow: hidden;
   @media (max-width: 768px){
@@ -72,7 +72,7 @@
     }
     .divider{
       position: relative;
-      margin:7.5rem 0;
+      margin:4.5rem 0 0;
       left: 50%;
       .line{
         width: 1px;

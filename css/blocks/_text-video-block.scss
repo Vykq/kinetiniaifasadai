@@ -1,6 +1,6 @@
 .text-video-block{
   padding: 0 5rem;
-  margin:7.5rem 0 1.5rem;
+  margin:7.5rem 0 0rem;
   overflow: hidden;
   @media (max-width: 768px){
     padding: 0 2.5rem;
@@ -196,7 +196,7 @@
     }
     .divider{
       position: relative;
-      margin:7.5rem 0;
+      margin:4.5rem 0;
       left: 50%;
       .line{
         width: 1px;

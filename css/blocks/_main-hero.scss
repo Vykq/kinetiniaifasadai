@@ -13,8 +13,9 @@ padding:5rem 5rem 0;
       video, img {
 
         @include imageCover(50%, 50%);
-        width: 9.5rem;
-        height: 9.5rem;
+        width: 7.5rem;
+        height: 7.5rem;
+        object-fit: contain;
       }
       &.desktop{
         display: block;

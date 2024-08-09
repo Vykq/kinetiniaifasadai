@@ -23,6 +23,16 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="kinetiniai">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/wp-content/themes/fasadai" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/node_modules" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
       <paths name="medgrupe-forma dev">
         <serverdata>
           <mappings>
