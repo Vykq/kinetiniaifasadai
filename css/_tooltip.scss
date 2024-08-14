@@ -1,6 +1,8 @@
 .tooltip{
   vertical-align: middle;
   margin-left: .3rem;
+  position: relative;
+  z-index: 88;
   svg{
     width: 1.1rem;
     height: 1.1rem;

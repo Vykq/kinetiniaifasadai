@@ -124,6 +124,8 @@ input.error {
 .tooltip {
   vertical-align: middle;
   margin-left: 0.3rem;
+  position: relative;
+  z-index: 88;
 }
 .tooltip svg {
   width: 1.1rem;

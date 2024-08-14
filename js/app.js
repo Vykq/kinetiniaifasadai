@@ -95,9 +95,36 @@ window.addEventListener('DOMContentLoaded', () => {
             theme: 'tomato',
             maxWidth: 500,
             arrow: false,
-            inlinePositioning: true,
-            plugins: [inlinePositioning],
+            placement: 'bottom',
+            popperOptions: {
+                strategy: 'fixed',
+                modifiers: [
+                    {
+                        name: 'flip',
+                        options: {
+                            fallbackPlacements: ['bottom'],
+                        },
+                    },
+                ],
+            },
+            onShow(instance) {
+                const xSvg = document.querySelector('#tippy-1-left svg.hide');
+                const mainSvg = document.querySelector('#tippy-1-left svg.question');
+                if (xSvg && mainSvg) {
+                    xSvg.style.display = "inline-block";
+                    mainSvg.style.display = "none";
+                }
+            },
+            onHide(instance) {
+                const xSvg = document.querySelector('#tippy-1-left svg.hide');
+                const mainSvg = document.querySelector('#tippy-1-left svg.question');
+                if (xSvg && mainSvg) {
+                    mainSvg.style.display = "inline-block";
+                    xSvg.style.display = "none";
+                }
+            }
         });
+
     }
     if(tip2) {
         tippy('#tippy-2-right', {
@@ -105,8 +132,30 @@ window.addEventListener('DOMContentLoaded', () => {
             theme: 'tomato',
             maxWidth: 500,
             arrow: false,
-            inlinePositioning: true,
-            plugins: [inlinePositioning],
+            placement: 'bottom',
+            popperOptions: {
+                strategy: 'fixed',
+                modifiers: [
+                    {
+                        name: 'flip',
+                        options: {
+                            fallbackPlacements: ['bottom'],
+                        },
+                    },
+                ],
+            },
+            onShow(instance) {
+                const xSvg = document.querySelector('#tippy-2-right svg.hide');
+                const mainSvg = document.querySelector('#tippy-2-right svg.question');
+                xSvg.style.display = "inline-block";
+                mainSvg.style.display = "none";
+            },
+            onHide(instance){
+                const xSvg = document.querySelector('#tippy-2-right svg.hide');
+                const mainSvg = document.querySelector('#tippy-2-right svg.question');
+                mainSvg.style.display = "inline-block";
+                xSvg.style.display = "none";
+            }
         });
     }
     if(tip3) {
@@ -115,8 +164,30 @@ window.addEventListener('DOMContentLoaded', () => {
             theme: 'tomato',
             maxWidth: 500,
             arrow: false,
-            inlinePositioning: true,
-            plugins: [inlinePositioning],
+            placement: 'bottom',
+            popperOptions: {
+                strategy: 'fixed',
+                modifiers: [
+                    {
+                        name: 'flip',
+                        options: {
+                            fallbackPlacements: ['bottom'],
+                        },
+                    },
+                ],
+            },
+            onShow(instance) {
+                const xSvg = document.querySelector('#tippy-3-bottom svg.hide');
+                const mainSvg = document.querySelector('#tippy-3-bottom svg.question');
+                xSvg.style.display = "inline-block";
+                mainSvg.style.display = "none";
+            },
+            onHide(instance){
+                const xSvg = document.querySelector('#tippy-3-bottom svg.hide');
+                const mainSvg = document.querySelector('#tippy-3-bottom svg.question');
+                mainSvg.style.display = "inline-block";
+                xSvg.style.display = "none";
+            }
         });
     }
     if(tip4) {
@@ -125,8 +196,30 @@ window.addEventListener('DOMContentLoaded', () => {
             theme: 'tomato',
             maxWidth: 500,
             arrow: false,
-            inlinePositioning: true,
-            plugins: [inlinePositioning],
+            placement: 'bottom',
+            popperOptions: {
+                strategy: 'fixed',
+                modifiers: [
+                    {
+                        name: 'flip',
+                        options: {
+                            fallbackPlacements: ['bottom'],
+                        },
+                    },
+                ],
+            },
+            onShow(instance) {
+                const xSvg = document.querySelector('#tippy-4-bottom svg.hide');
+                const mainSvg = document.querySelector('#tippy-4-bottom svg.question');
+                xSvg.style.display = "inline-block";
+                mainSvg.style.display = "none";
+            },
+            onHide(instance){
+                const xSvg = document.querySelector('#tippy-4-bottom svg.hide');
+                const mainSvg = document.querySelector('#tippy-4-bottom svg.question');
+                mainSvg.style.display = "inline-block";
+                xSvg.style.display = "none";
+            }
         });
     }
 
@@ -136,8 +229,30 @@ window.addEventListener('DOMContentLoaded', () => {
             theme: 'tomato',
             maxWidth: 500,
             arrow: false,
-            inlinePositioning: true,
-            plugins: [inlinePositioning],
+            placement: 'bottom',
+            popperOptions: {
+                strategy: 'fixed',
+                modifiers: [
+                    {
+                        name: 'flip',
+                        options: {
+                            fallbackPlacements: ['bottom'],
+                        },
+                    },
+                ],
+            },
+            onShow(instance) {
+                const xSvg = document.querySelector('#tippy-5-right svg.hide');
+                const mainSvg = document.querySelector('#tippy-5-right svg.question');
+                xSvg.style.display = "inline-block";
+                mainSvg.style.display = "none";
+            },
+            onHide(instance){
+                const xSvg = document.querySelector('#tippy-5-right svg.hide');
+                const mainSvg = document.querySelector('#tippy-5-right svg.question');
+                mainSvg.style.display = "inline-block";
+                xSvg.style.display = "none";
+            }
         });
     }
 
@@ -147,20 +262,65 @@ window.addEventListener('DOMContentLoaded', () => {
             theme: 'tomato',
             maxWidth: 500,
             arrow: false,
-            inlinePositioning: true,
-            plugins: [inlinePositioning],
+            placement: 'bottom',
+            popperOptions: {
+                strategy: 'fixed',
+                modifiers: [
+                    {
+                        name: 'flip',
+                        options: {
+                            fallbackPlacements: ['bottom'],
+                        },
+                    },
+                ],
+            },
+            onShow(instance) {
+                const xSvg = document.querySelector('#tippy-6-right svg.hide');
+                const mainSvg = document.querySelector('#tippy-6-right svg.question');
+                xSvg.style.display = "inline-block";
+                mainSvg.style.display = "none";
+            },
+            onHide(instance){
+                const xSvg = document.querySelector('#tippy-6-right svg.hide');
+                const mainSvg = document.querySelector('#tippy-6-right svg.question');
+                mainSvg.style.display = "inline-block";
+                xSvg.style.display = "none";
+            }
         });
     }
 
     if(tip7) {
-        tippy('#tippy-6-right', {
+        tippy('#tippy-7-right', {
             content: tip7,
             theme: 'tomato',
             maxWidth: 500,
             arrow: false,
-            inlinePositioning: true,
-            plugins: [inlinePositioning],
+            placement: 'bottom',
+            popperOptions: {
+                strategy: 'fixed',
+                modifiers: [
+                    {
+                        name: 'flip',
+                        options: {
+                            fallbackPlacements: ['bottom'],
+                        },
+                    },
+                ],
+            },
+            onShow(instance) {
+                const xSvg = document.querySelector('#tippy-7-right svg.hide');
+                const mainSvg = document.querySelector('#tippy-7-right svg.question');
+                xSvg.style.display = "inline-block";
+                mainSvg.style.display = "none";
+            },
+            onHide(instance){
+                const xSvg = document.querySelector('#tippy-7-right svg.hide');
+                const mainSvg = document.querySelector('#tippy-7-right svg.question');
+                mainSvg.style.display = "inline-block";
+                xSvg.style.display = "none";
+            }
         });
     }
+
 
 });
