@@ -37,6 +37,7 @@
                     <?php if(get_field('subtitle')): ?>
                         <p class="subtitle"><?php echo get_field('subtitle'); ?>
                         <?php if(get_field('more_text')) : ?>
+                        <span class="more-text"><?php echo get_field('more_text'); ?></span>
                             <span class="tooltip" id="tippy-1-left">
                                 <svg class="question" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="10.5" cy="10.5" r="10.5" fill="#DBFF00"/>
@@ -46,8 +47,6 @@
                                 <circle cx="13" cy="13" r="13" fill="#DBFF00"/>
                                 <path d="M8 18L18 8M18 18L8 8" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
-
-
                             </span>
                         <?php endif; ?>
                         </p>
@@ -76,7 +75,3 @@
         </div>
     </div>
 </section>
-
-<script>
-    const tip1 = "<?php echo get_field('more_text'); ?>";
-</script>

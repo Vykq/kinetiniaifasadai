@@ -1,3 +1,10 @@
+.more-text{
+  display: none;
+  &.show{
+    display: inline;
+  }
+}
+
 .tooltip{
   vertical-align: middle;
   margin-left: .3rem;

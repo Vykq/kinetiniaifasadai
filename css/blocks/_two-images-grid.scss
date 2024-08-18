@@ -29,6 +29,9 @@
         @media (max-width: 960px){
           width: 100%;
         }
+        &.width{
+          width: 60%;
+        }
         b, strong{
           font-weight: 700;
           color:#FFF;

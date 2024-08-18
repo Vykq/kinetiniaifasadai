@@ -25,6 +25,9 @@
         position: relative;
         color:$textgray;
         font-weight: 400;
+        &.width{
+          width: 60%;
+        }
         @media (max-width: 960px){
           width: 100%;
         }
