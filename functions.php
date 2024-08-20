@@ -89,25 +89,25 @@ add_action('after_setup_theme', 'theme_features');
 
 function theme_post_types()
 {
-    register_post_type('testimonial', array(
-        'rewrite' => array('slug' => __('atsiliepimai', 'slug', 'degsis')),
-        'has_archive' => false,
-        'show_in_rest' => true,
-        'public' => true,
-        'menu_position' => -555,
-        'labels' => array(
-            'name' => 'Atsiliepimai',
-            'add_new_item' => 'Pridėti atsiliepimą',
-            'edit_item' => 'Koreguoti atsiliepimą',
-            'all_items' => 'Visi atsiliepimai',
-            'singular_name' => 'Atsiliepimas'
-        ),
-        'supports' => array(
-            'title',
-            'thumbnail'
-        ),
-        'menu_icon' => 'dashicons-smiley'
-    ));
+//    register_post_type('testimonial', array(
+//        'rewrite' => array('slug' => __('atsiliepimai', 'slug', 'degsis')),
+//        'has_archive' => false,
+//        'show_in_rest' => true,
+//        'public' => true,
+//        'menu_position' => -555,
+//        'labels' => array(
+//            'name' => 'Atsiliepimai',
+//            'add_new_item' => 'Pridėti atsiliepimą',
+//            'edit_item' => 'Koreguoti atsiliepimą',
+//            'all_items' => 'Visi atsiliepimai',
+//            'singular_name' => 'Atsiliepimas'
+//        ),
+//        'supports' => array(
+//            'title',
+//            'thumbnail'
+//        ),
+//        'menu_icon' => 'dashicons-smiley'
+//    ));
 
 //    register_taxonomy('formatas', array('testimonial'), array(
 //        'hierarchical' => true,

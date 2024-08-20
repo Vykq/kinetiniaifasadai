@@ -351,7 +351,7 @@ footer .footer-img img {
 
 .modal {
   backdrop-filter: blur(10px);
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   top: 0;
   left: 0;
@@ -370,7 +370,7 @@ footer .footer-img img {
   opacity: 1;
 }
 .modal .block {
-  background-color: #DBFF00;
+  background-color: rgb(0, 0, 0);
   padding: 5rem;
   position: relative;
   min-width: 66%;
@@ -417,11 +417,14 @@ footer .footer-img img {
   height: 100%;
   transition: 0.2s all ease;
 }
+.modal .block .close-modal svg path {
+  stroke: #FFF;
+}
 .modal .block .close-modal:hover svg {
   transform: rotate(90deg);
 }
 .modal .block .modal-title {
-  color: #000;
+  color: #FFF;
   font-weight: 400;
   font-size: 4rem;
   line-height: 4.5rem;
@@ -440,7 +443,7 @@ footer .footer-img img {
 }
 .modal .block .modal-subtitle {
   margin-top: 1.5rem;
-  color: #000;
+  color: #FFF;
   font-weight: 500;
   font-size: 1.1rem;
   line-height: 1.5rem;
@@ -517,7 +520,7 @@ footer .footer-img img {
   font-size: 0.9rem;
   line-height: 1.5rem;
   font-weight: 400;
-  color: #000;
+  color: #FFF;
   cursor: pointer;
   user-select: none;
   font-family: inherit;
@@ -553,7 +556,7 @@ footer .footer-img img {
 }
 .modal .block form .checks label {
   font-size: 1rem;
-  color: #000;
+  color: #FFF;
   line-height: 1.25rem;
   cursor: pointer;
   font-family: "Helvetica", sans-serif;
@@ -564,8 +567,8 @@ footer .footer-img img {
   width: 1rem;
   height: 1rem;
   aspect-ratio: 1/1;
-  border: 1px solid #000;
-  background-color: #DBFF00;
+  border: 1px solid #DBFF00;
+  background-color: #000;
   cursor: pointer;
 }
 .modal .block form .checks input:focus {
@@ -586,7 +589,7 @@ footer .footer-img img {
   width: 0.65rem;
   height: 0.65rem;
   aspect-ratio: 1/1;
-  background-color: #000;
+  background-color: #DBFF00;
 }
 .modal .block form .error-msg {
   margin-bottom: 1rem;
@@ -629,8 +632,8 @@ footer .footer-img img {
 .modal .block form .button-area button {
   font-family: inherit;
   width: 100%;
-  background-color: #000;
-  color: #FFF;
+  background-color: #DBFF00;
+  color: #000;
   border-radius: 5px;
   padding: 1rem 2rem;
   font-size: 0.8rem;
@@ -664,9 +667,15 @@ footer .footer-img img {
   object-fit: cover;
   object-position: 50% 50%;
   transform: none;
-  width: 7.5rem;
-  height: 7.5rem;
+  width: 8.5rem;
+  height: 8.5rem;
   object-fit: contain;
+}
+@media (max-width: 980px) {
+  .main-hero-block .container .logo-area video, .main-hero-block .container .logo-area img {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
 }
 .main-hero-block .container .logo-area.desktop {
   display: block;
