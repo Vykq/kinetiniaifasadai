@@ -111,11 +111,12 @@
 <div class="steps-block no-margin">
     <div class="container no-margin">
         <div class="step third">
-            <div class="slider-pile">
-                <video class="observer-video" playsinline muted loop autoplay>
-                    <source type="video/mp4" src="<?php echo get_theme_file_uri() . '/assets/video/piles.mp4'; ?>">
-                </video>
-            </div>
+            <div id="lottie"></div>
+<!--            <div class="slider-pile">-->
+<!--                <video class="observer-video" playsinline muted loop autoplay>-->
+<!--                    <source type="video/mp4" src="--><?php //echo get_theme_file_uri() . '/assets/video/piles.mp4'; ?><!--">-->
+<!--                </video>-->
+<!--            </div>-->
         </div>
     </div>
 </div>
@@ -171,3 +172,10 @@
         </div>
     </div>
 </div>
+
+
+
+<script>
+
+
+</script>

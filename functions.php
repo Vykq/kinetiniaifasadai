@@ -20,6 +20,7 @@ function webpack_files() {
     wp_enqueue_style('webpack-styles', get_theme_file_uri('assets/style.css'), array(), time());
 
     wp_enqueue_script('splide-js', get_theme_file_uri('assets/splide.min.js'), array(), '4.1.3', true);
+    wp_enqueue_script('lottie-js', 'https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js', array(), '5.7.13', true);
     wp_enqueue_style('splide-styles', get_theme_file_uri('assets/splide-core.min.css'), array(), '4.1.3');
 
     wp_localize_script( 'webpack-js', 'themeUrl',

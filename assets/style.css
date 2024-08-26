@@ -1119,6 +1119,7 @@ footer .footer-img img {
 .steps-block .container .step.third {
   margin: 5rem 0;
   display: block;
+  overflow-x: hidden;
 }
 @media (max-width: 960px) {
   .steps-block .container .step.third {
@@ -1144,6 +1145,11 @@ footer .footer-img img {
   .steps-block .container .step.third {
     margin: 30rem 0 20rem;
   }
+}
+.steps-block .container .step.third #lottie {
+  width: 120%;
+  height: 100%;
+  transform: translate3d(0px, 0px, 0px) translateX(-10%);
 }
 .steps-block .container .step.third .slider-pile {
   overflow: hidden;

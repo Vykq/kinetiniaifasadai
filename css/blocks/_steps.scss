@@ -262,6 +262,7 @@
       &.third{
         margin:5rem 0;
         display: block;
+        overflow-x: hidden;
         @media (max-width: 960px){
           margin:18rem 0 0;
         }
@@ -276,6 +277,11 @@
         }
         @media (max-width: 370px){
           margin:30rem 0 20rem;
+        }
+        #lottie{
+          width: 120%;
+          height: 100%;
+          transform: translate3d(0px, 0px, 0px) translateX(-10%);
         }
         .slider-pile{
           overflow: hidden;
