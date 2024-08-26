@@ -155,6 +155,7 @@
           cursor: pointer;
           user-select: none;
           font-family: inherit;
+
         }
       }
       input[type="text"], input[type="password"], textarea, select{
@@ -194,6 +195,9 @@
           line-height: 1.25rem;
           cursor: pointer;
           font-family: 'Helvetica', sans-serif;
+          a{
+            text-decoration: underline;
+          }
         }
         input{
           position: relative;

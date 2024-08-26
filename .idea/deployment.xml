@@ -3,28 +3,21 @@
   <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false">
     <option name="confirmBeforeUploading" value="false" />
     <serverData>
-      <paths name="CCWEB DEV">
+      <paths name="CCWEB DEVS">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
-      <paths name="Expertmedia dev">
+      <paths name="DEV">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
-      <paths name="Ziomastic FTP">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="kinetiniai">
+      <paths name="devvvv">
         <serverdata>
           <mappings>
             <mapping deploy="/wp-content/themes/fasadai" local="$PROJECT_DIR$" web="/" />
@@ -32,13 +25,6 @@
           <excludedPaths>
             <excludedPath local="true" path="$PROJECT_DIR$/node_modules" />
           </excludedPaths>
-        </serverdata>
-      </paths>
-      <paths name="medgrupe-forma dev">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
         </serverdata>
       </paths>
     </serverData>

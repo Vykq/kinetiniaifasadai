@@ -561,6 +561,9 @@ footer .footer-img img {
   cursor: pointer;
   font-family: "Helvetica", sans-serif;
 }
+.modal .block form .checks label a {
+  text-decoration: underline;
+}
 .modal .block form .checks input {
   position: relative;
   appearance: none;
@@ -1798,7 +1801,7 @@ footer .footer-img img {
 }
 @media (max-width: 1750px) {
   .gallery-block .container .line.horizontal {
-    height: 27rem;
+    height: 30rem;
   }
 }
 @media (max-width: 960px) {
