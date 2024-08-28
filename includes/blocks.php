@@ -9,6 +9,7 @@ $blocks = array(
     'two-images-grid' => 'Two images grid',
     'gallery' => 'Galerija',
     'newsletter-block' => 'Newsletter',
+    'text' => 'text',
 );
 
 add_action('acf/init', 'my_acf_init');

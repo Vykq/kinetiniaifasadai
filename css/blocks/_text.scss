@@ -1,0 +1,58 @@
+.text-block{
+  margin:3rem 0;
+  .container{
+    @include smallStructure();
+    .content{
+      overflow: hidden;
+      .title{
+        font-size: 2rem;
+        line-height: 2.5rem;
+        color: #FFF;
+        margin-bottom: 1.5rem;
+      }
+      .table{
+        overflow: auto;
+      }
+      .text{
+        *{
+          color:#FFF;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+        b, strong{
+          font-weight: 700;
+        }
+        a{
+          color:$primary;
+          text-decoration: underline;
+          span{
+            color:$primary;
+          }
+        }
+        table{
+          border: 1px solid #FFF;
+          text-align: center;
+          width: 100%;
+          border-spacing: 0;
+          border-collapse: collapse;
+          tr, td{
+            border: 1px solid #FFF;
+            padding: .5rem;
+          }
+          td{
+            vertical-align: middle;
+          }
+          thead {
+            background-color: $primary;
+
+            td {
+              color: #000;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+}
