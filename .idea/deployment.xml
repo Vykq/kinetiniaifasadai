@@ -17,6 +17,13 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="LIVE">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/domains/kinetiniaifasadai.lt/public_html/wp-content/themes/fasadai" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="Ziomastic FTP">
         <serverdata>
           <mappings>

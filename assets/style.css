@@ -1201,6 +1201,16 @@ footer .footer-img img {
   display: block;
   overflow-x: hidden;
 }
+@media (max-width: 1600px) {
+  .steps-block .container .step.third {
+    margin: 10rem 0 5rem;
+  }
+}
+@media (max-width: 1280px) {
+  .steps-block .container .step.third {
+    margin: 12rem 0 5rem;
+  }
+}
 @media (max-width: 960px) {
   .steps-block .container .step.third {
     margin: 18rem 0 0;
