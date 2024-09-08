@@ -1843,7 +1843,7 @@ footer .footer-img img {
     aspect-ratio: 329/500;
   }
 }
-.gallery-block .container .gallery-slider-wrapper .left .splide .image-area img {
+.gallery-block .container .gallery-slider-wrapper .left .splide .image-area img, .gallery-block .container .gallery-slider-wrapper .left .splide .image-area video {
   width: 100%;
   height: 100%;
   object-fit: cover;

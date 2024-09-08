@@ -30,10 +30,18 @@
                 <div class="splide gallery-slider" role="group" aria-label="Galerija">
                 <div class="splide__track">
                     <ul class="splide__list">
-                        <?php foreach ($gallery as $url) : ?>
+                        <?php foreach ($gallery as $url) :
+                            $data_type = pathinfo($url, PATHINFO_EXTENSION);
+                            ?>
                             <li class="splide__slide">
                                <div class="image-area">
+                                   <?php if ($data_type == 'mp4') :?>
+                                       <video playsinline muted loop autoplay>
+                                           <source src="<?php echo $url;?>" type="video/mp4">
+                                       </video>
+                                   <?php else: ?>
                                    <img src="<?php echo $url; ?>" alt="Galerijos nuotrauka">
+                                    <?php endif; ?>
                                </div>
                             </li>
                         <?php endforeach; ?>

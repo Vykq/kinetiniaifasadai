@@ -98,7 +98,7 @@ window.addEventListener('DOMContentLoaded', () => {
             pagination: true,
             gap: '1rem',
             arrows: false,
-            autoplay: true,
+            autoplay: false,
             interval: 2500
         }).mount();
     }
