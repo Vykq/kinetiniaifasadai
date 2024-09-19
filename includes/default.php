@@ -49,11 +49,21 @@ add_filter( 'script_loader_tag', 'exp_defer_scripts', 10, 3 );
 
 function exp_defer_scripts( $tag, $handle, $src ) {
     $defer = array(
-        'webpack-js'
+        'webpack-js',
+        'splide-js',
+    );
+
+    $async = array(
+
+        'lottie-js'
     );
 
     if ( in_array( $handle, $defer ) ) {
         return '<script src="' . $src . '" defer="defer"></script>';
+    }
+
+    if ( in_array( $handle, $async ) ) {
+        return '<script src="' . $src . '" async="async"></script>';
     }
 
     return $tag;

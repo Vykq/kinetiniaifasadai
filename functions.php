@@ -12,17 +12,13 @@ include(dirname(__FILE__) . '/includes/default.php');
 //}
 
 function webpack_files() {
-//    wp_enqueue_script('swiper-js', get_theme_file_uri('assets/swiper-bundle.min.js'), array(), '1.0.1', true);
-//    wp_enqueue_script('gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js', array(), '1.0.1', true);
-//    wp_enqueue_script('scrollTrigger', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js', array(), time(), true);
     wp_enqueue_script('webpack-js', get_theme_file_uri('assets/app.js'), array(), '1.2', true);
-//    wp_enqueue_style('swiper-styles', get_theme_file_uri('assets/swiper-bundle.min.css'), array(), '1.0.1');
     wp_enqueue_style('webpack-styles', get_theme_file_uri('assets/style.css'), array(), '1.1');
 
     wp_enqueue_script('splide-js', get_theme_file_uri('assets/splide.min.js'), array(), '4.1.3', true);
+//    wp_enqueue_script('lottie-js', get_theme_file_uri('assets/lootie.min.js'), array(), '4.1.3', true);
     wp_enqueue_script('lottie-js', 'https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js', array(), '5.7.13', true);
     wp_enqueue_style('splide-styles', get_theme_file_uri('assets/splide-core.min.css'), array(), '4.1.3');
-
     wp_localize_script( 'webpack-js', 'themeUrl',
         array(
             'ajax_url' => admin_url('admin-ajax.php'),
@@ -53,10 +49,11 @@ function webpack_files() {
             'enter_email' => __('Įveskite savo el. paštą arba vartotojo vardą.', 'core'),
             'enter_height_weight' => __('Įveskite savo ūgį ir svorį.', 'core'),
             'select_answer' => __('Pasirinkite savo atsakymą.', 'core'),
-
-
         )
     );
+
+    wp_dequeue_script( 'jquery');
+    wp_deregister_script( 'jquery');
 
 }
 add_action('wp_enqueue_scripts', 'webpack_files');
