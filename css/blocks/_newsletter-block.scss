@@ -50,6 +50,62 @@
         display: grid;
         grid-template-columns: 1fr max-content;
         gap: .75rem;
+        .single-input{
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
+        .checks{
+          margin: 0 0 1.25rem;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          label{
+            font-size: 1rem;
+            color:#FFF;
+            line-height: 1.25rem;
+            cursor: pointer;
+            font-family: 'Helvetica', sans-serif;
+            a{
+              text-decoration: underline;
+            }
+          }
+          input{
+            position: relative;
+            appearance: none;
+            width: 1rem;
+            height: 1rem;
+            aspect-ratio: 1/1;
+            border:1px solid $primary;
+            background-color: #000;
+            cursor: pointer;
+            padding: 0;
+            &:focus{
+              outline: 1px solid #000;
+            }
+            &[type="radio"]{
+              border-radius: 100%;
+              &:checked{
+                &::after{
+                  border-radius: 100%;
+                }
+              }
+            }
+            &:checked{
+              &::after{
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 0.65rem;
+                height: 0.65rem;
+                aspect-ratio: 1/1;
+                background-color: $primary;
+              }
+            }
+          }
+        }
         input{
           width: 100%;
           background-color: #D9D9D9;
@@ -64,6 +120,9 @@
             font-weight: 700;
             color: #000;
           }
+        }
+        .button-area{
+          height: fit-content;
         }
         button{
           height: 100%;

@@ -86,6 +86,8 @@ footer{
       }
     }
     .copyright-text{
+      position: relative;
+      z-index: 55;
       margin-top: 3rem;
       color: #636363;
       font-size: .75rem;

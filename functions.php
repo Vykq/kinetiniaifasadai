@@ -12,8 +12,8 @@ include(dirname(__FILE__) . '/includes/default.php');
 //}
 
 function webpack_files() {
-    wp_enqueue_script('webpack-js', get_theme_file_uri('assets/app.js'), array(), '1.2', true);
-    wp_enqueue_style('webpack-styles', get_theme_file_uri('assets/style.css'), array(), '1.1');
+    wp_enqueue_script('webpack-js', get_theme_file_uri('assets/app.js'), array(), '1.3', true);
+    wp_enqueue_style('webpack-styles', get_theme_file_uri('assets/style.css'), array(), '1.3');
 
     wp_enqueue_script('splide-js', get_theme_file_uri('assets/splide.min.js'), array(), '4.1.3', true);
 //    wp_enqueue_script('lottie-js', get_theme_file_uri('assets/lootie.min.js'), array(), '4.1.3', true);

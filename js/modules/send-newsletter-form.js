@@ -7,6 +7,7 @@ const sendNewsletterForm = () =>{
     const form = document.querySelector('form.newsletter');
     const statusInfoBlock = form.querySelector('p.error-msg');
     const emailInput = form.querySelector('input[name="email"]');
+    const checkAgree = form.querySelector('input[name="privacy"]');
 
     const message = {
         loading: themeUrl.loading,
@@ -27,7 +28,23 @@ const sendNewsletterForm = () =>{
         }
     });
 
+    checkAgree.addEventListener('click', () => {
+        if(checkAgree.parentElement.classList.contains('error')) {
+            checkAgree.parentElement.classList.remove('error');
+            statusInfoBlock.classList.remove('field-error');
+            statusInfoBlock.textContent = '';
+        }
+    })
 
+    function checkPolicy() {
+        if(checkAgree.checked === false) {
+            checkAgree.parentElement.classList.add('error');
+            statusInfoBlock.textContent = themeUrl.privacy_check;
+            return false;
+        } else {
+            return true;
+        }
+    }
 
     function emailValue() {
         if (checkEmail(emailInput, statusInfoBlock)) {
@@ -39,6 +56,10 @@ const sendNewsletterForm = () =>{
 
     const validateForm = () => {
         if (!emailValue()) {
+            return false;
+        }
+
+        if(!checkPolicy()){
             return false;
         }
 

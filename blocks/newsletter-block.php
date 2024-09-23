@@ -15,7 +15,15 @@
                 <div class="input">
                     <div class="single-input">
                         <input type="text" name="email" placeholder="El. Paštas" />
+                        <div class="checks">
+                            <div class="radio-wrapper">
+                                <label for="privacy" class="privacy-label">
+                                    <input type="radio" name="privacy" id="privacy"> <?php echo get_field('registracija','main-settings')['privatumo_politikos_tekstas']; ?>
+                                </label>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="button-area">
                         <button type="submit" class="primary-btn">
                             <span class="desktop">Susisiekti</span>

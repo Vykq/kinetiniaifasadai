@@ -39,6 +39,7 @@
                 </div>
 
                 <p class="copyright-text">
+                    <a href="/privatumo-politika/">Privatumo politika</a></br>
                     © <?php echo date('Y'); ?> Kinetiniai fasadai
                 </p>
 
